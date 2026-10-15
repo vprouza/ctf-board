@@ -3,7 +3,7 @@ import time
 from datetime import datetime
 
 # Set your serial port and baudrate here
-SERIAL_PORT = '/dev/ttyACM0'  # e.g. '/dev/ttyUSB0' on Linux/Mac or 'COM3' on Windows
+SERIAL_PORT = '/dev/ttyACM1'  # e.g. '/dev/ttyUSB0' on Linux/Mac or 'COM3' on Windows
 BAUDRATE = 115200
 
 # Set your target time (or use current time)
