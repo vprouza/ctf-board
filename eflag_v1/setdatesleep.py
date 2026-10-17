@@ -3,7 +3,7 @@ import time
 from datetime import datetime
 
 # Set your serial port and baudrate here
-SERIAL_PORT = '/dev/ttyACM1'  # e.g. '/dev/ttyUSB0' on Linux/Mac or 'COM3' on Windows
+SERIAL_PORT = '/dev/ttyACM0'  # e.g. '/dev/ttyUSB0' on Linux/Mac or 'COM3' on Windows
 BAUDRATE = 115200
 
 # Set your target time (or use current time)
@@ -56,9 +56,9 @@ def main():
 
             ser.write("delete_log()\r\n".encode())
             time.sleep(0.5)
-            ser.write("go_to_sleep()\r\n".encode())
-            ser.write("\r\n".encode())
-            time.sleep(0.1)
+            #ser.write("go_to_sleep()\r\n".encode())
+            #ser.write("\r\n".encode())
+            #time.sleep(0.1)
 
             response = ser.read_all().decode(errors='ignore')
             print("Response from device:")
